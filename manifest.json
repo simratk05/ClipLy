@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "ClipLy",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "http://127.0.0.1:8000/save_bookmark"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon-16.png",
+      "48": "icon-48.png",
+      "128": "icon-128.png"
+    }
+  }
+}

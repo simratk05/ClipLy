@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ClipLy</title>
+    <style>
+      body {
+        width: 200px;
+        padding: 20px;
+        background-color: #374151;
+        font-family: "Baskerville", Serif;
+        border-radius: 30px; /* Rounded corners */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+        font-weight: bold;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+      }
+      input[type="text"] {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #0c4a6e;
+        border-radius: 5px;
+        text-align: center;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #0e7490;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #064e62; /* Darker blue on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="font-weight: bold">Save Bookmark</h1>
+    <input type="text" id="title" placeholder="Enter title" />
+    <button id="save">Save Bookmark</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
