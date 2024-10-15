@@ -1,0 +1,77 @@
+Project Title: ClipLy Bookmark Saver website
+Platform/Languages Used: Python, Django, JavaScript
+Database: SQL Lite
+Scripting Language / Designing: HTML, CSS, JavaScript
+________________________________________
+
+2.1 Project Scope Definition
+ClipLy is a Chrome extension designed to enable users to save, organize, and manage bookmarks efficiently. Below are the detailed descriptions of the main functionalities:
+
+2.1.1 User Registration and Login
+•	User Registration: Users can sign up by providing essential details such as name, email, and password. The system ensures secure password encryption and validation.
+
+•	User Login: Registered users can log in using their credentials. The system supports session management to keep users logged in securely.
+
+•	Profile Management: Users can update their profiles, including personal information and password changes.
+
+2.1.2	Bookmark Management
+
+•	Bookmark Saving: Users can save any webpage with a single click, capturing the URL, title, and a brief description.
+
+•	Bookmark Editing: Users can edit bookmark details post-creation to accommodate any changes.
+
+________________________________________
+
+2.2	Admin Control Panel
+
+•	Dashboard: A centralized dashboard for admins to view site activity, including user registrations and bookmark activity.
+
+•	User Management: Tools for admins to view, edit, or deactivate user accounts.
+________________________________________
+2.3	Reporting and Analytics
+
+•	Customizable Reports: Ability for admins to generate custom reports based on specific criteria and export data for further analysis.
+________________________________________
+
+2.5 Project Deliverables
+Phase 1: Development
+1.	Functional Specifications Document (FSD): Detailed documentation of functionalities, features, and user stories.
+2.	User Interface (UI) Mock-ups/Prototypes: Visual representations of the application's layout and user flow.
+3.	Admin Panel Development: Dedicated control panel for admins to manage bookmarks, users, and analytics.
+4.	Bookmark Management Module: Interface for saving, editing, and organizing bookmarks.
+5.	User Module: Interface for users to register, log in, and manage bookmarks.
+6.	Quality Assurance (QA) Testing: Rigorous testing to ensure functionality and fix bugs.
+
+Phase 2: Deployment and Training
+
+1.	Deployment Package: Files and instructions for installing and configuring the application on the client's server.
+
+2.	User Manuals and Training Materials: Guides and materials for end-users and admins.
+
+Phase 3: Post-Deployment Support
+
+1.	Knowledge Base: Repository of solutions to common issues and FAQs.
+2.	Ongoing Bug Fixes and Maintenance: Plan for addressing bugs and providing updates.
+3.	Support Channels: Dedicated support channels for user assistance.
+
+________________________________________
+2.6 Details in Work
+
+The project involved several milestones, each focusing on different aspects of the ClipLy system. From learning basic web development skills to deploying the final application, each stage contributed to the project's overall success. The work included:
+
+•	Learning HTML, CSS, and JavaScript: Building foundational knowledge.
+•	Understanding Django: Gaining insights into modern web frameworks.
+•	Creating Login and Admin Functions: Developing secure user authentication and admin functionalities.
+•	Building Support and End-User Modules: Ensuring comprehensive functionality for support teams and end-users.
+________________________________________
+2.7 Specification
+
+The ClipLy system was built using the following technologies: Front-End: HTML, CSS, JavaScript
+Back-End: Python, Django
+
+________________________________________
+
+2.8 Details of Measurement
+
+The performance and functionality of the system were measured through various testing methods, including functional testing to ensure all features worked correctly, and performance testing to evaluate the system's ability to handle high traffic. Additionally, security measures such as data encryption and regular security audits were implemented to ensure data integrity and user safety.
+This detailed project scope ensures a comprehensive and user-friendly ClipLy extension, addressing all critical aspects of bookmark management and user interaction.
