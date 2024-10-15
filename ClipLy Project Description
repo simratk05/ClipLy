@@ -22,12 +22,6 @@ ClipLy is a Chrome extension designed to enable users to save, organize, and man
 
 ________________________________________
 
-
-
-
-
-
-
 2.2	Admin Control Panel
 
 •	Dashboard: A centralized dashboard for admins to view site activity, including user registrations and bookmark activity.
@@ -54,8 +48,6 @@ Phase 2: Deployment and Training
 
 2.	User Manuals and Training Materials: Guides and materials for end-users and admins.
 
-
-
 Phase 3: Post-Deployment Support
 
 1.	Knowledge Base: Repository of solutions to common issues and FAQs.
@@ -76,7 +68,6 @@ ________________________________________
 
 The ClipLy system was built using the following technologies: Front-End: HTML, CSS, JavaScript
 Back-End: Python, Django
-
 ________________________________________
 
 
