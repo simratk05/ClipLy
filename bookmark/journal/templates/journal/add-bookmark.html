@@ -1,0 +1,32 @@
+{% extends 'journal/navbar.html' %} {% load static %} {% block content %}
+
+<style>
+  body {
+    background-image: url("{% static 'C:\Users\Hp\OneDrive\Desktop\bookmark\bookmark\static\images\back1.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Ensure no margin around the body */
+  }
+  .container .btn-outline-secondary:hover {
+    background-color: #0056b3; /* Hover background color */
+    color: #ffffff; /* Text color on hover */
+  }
+</style>
+<br />
+<div class="container bg-white shadow-md p-5 form-layout">
+  <h1>Add a Bookmark</h1>
+  <br />
+  <form method="POST" autocomplete="off">
+    {% csrf_token %} {{ form.as_p }}
+    <br />
+    <button
+      class="btn btn-outline-secondary btn-md w-100 btn-block p-3"
+      type="submit"
+    >
+      &nbsp; Save Bookmark
+    </button>
+  </form>
+</div>
+<br />
+{% endblock %}

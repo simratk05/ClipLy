@@ -1,0 +1,61 @@
+{% load static %} {% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ClipLy | Login</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://bootswatch.com/5/morph/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css' %}"
+    />
+    <style>
+      body {
+        background-image: url('{% static "C:\Users\Hp\OneDrive\Desktop\bookmark\bookmark\static\images\back1.jpg" %}');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .form-container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        max-width: 400px;
+        width: 100%;
+      }
+      .form-container h3 {
+        margin-bottom: 40px;
+      }
+      .form-container .btn {
+        font-size: 16px;
+        padding: 20px;
+      }
+      .form-container .btn-secondary:hover {
+        background-color: #0056b3; /* Hover background color */
+        color: #ffffff; /* Optional: Change text color on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h3>Login to your account</h3>
+      <form method="POST" autocomplete="off">
+        {% csrf_token %} {{ LoginForm|crispy }}
+        <br />
+        <button class="btn btn-secondary btn-md w-100 btn-block" type="submit">
+          Login
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

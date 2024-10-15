@@ -1,0 +1,65 @@
+{% extends 'journal/navbar.html' %} {% load static %} {% block content %}
+<br />
+<style>
+  .button-group {
+    display: flex;
+    gap: 10px; /* Adjust space between buttons if needed */
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-md {
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px 20px; /* Adjust padding */
+  }
+
+  .w-50 {
+    width: 48%; /* Adjust width to fit side by side with gap */
+  }
+
+  body {
+    background-image: url("{% static 'C:\Users\Hp\OneDrive\Desktop\bookmark\bookmark\static\images\back1.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Ensure no margin around the body */
+  }
+
+  .btn-outline-secondary {
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .btn-outline-secondary:hover {
+    background-color: #0056b3; /* Hover background color */
+    color: #ffffff; /* Text color on hover */
+  }
+</style>
+<div class="container bg-white shadow-md p-5 form-layout">
+  <h1>Update Profile</h1>
+  <br />
+  <form method="POST" autocomplete="off">
+    {% csrf_token %} {{ ProfileForm.as_p }}
+    <br />
+    <div class="button-group">
+      <button class="btn btn-outline-secondary btn-md w-50 p-2" type="submit">
+        &nbsp; Update Account
+      </button>
+      <a
+        href="{% url 'delete_account' %}"
+        class="btn btn-outline-secondary btn-md w-50 p-2"
+      >
+        Delete Account
+      </a>
+    </div>
+  </form>
+</div>
+<br />
+{% endblock %}

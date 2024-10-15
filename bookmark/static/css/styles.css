@@ -1,0 +1,10 @@
+.form-layout {
+  border-radius: 20px;
+  width: 500px;
+}
+
+body {
+  background: url("{% static 'images/bookmar2.avif' %}") no-repeat center center
+    fixed;
+  background-size: cover;
+}

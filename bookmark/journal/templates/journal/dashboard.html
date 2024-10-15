@@ -1,0 +1,113 @@
+{% extends 'journal/navbar.html' %} {% load static %}
+
+<head>
+  <link
+    rel="icon"
+    href="{% static 'images/icon-128.ico' %}"
+    type="image/x-icon"
+  />
+</head>
+
+{% block content %}
+<style>
+  body {
+    background-image: url("{% static 'images/back5.jpg' %}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Ensure no margin around the body */
+  }
+  .main-container {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    gap: 20px; /* Space between the text and image */
+    flex: 1; /* Allow main content to grow and push the footer down */
+  }
+
+  .text-container {
+    flex: 1; /* Take up remaining space */
+    background-color: white; /* Dark grey with 50% transparency */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  }
+  .image-container {
+    flex: 0 0 300px; /* Fixed width for the image container */
+  }
+  .image-container img {
+    width: 100%; /* Make image responsive to container width */
+    border-radius: 5px; /* Optional: rounded corners for the image */
+  }
+  .why-use-cliply-container {
+    display: flex;
+    align-items: center;
+  }
+  .why-use-cliply-container .text {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+</style>
+<br />
+
+<div class="main-container">
+  <div class="text-container">
+    <h1 style="
+    font-family: 'Platino', serif;
+    font-size: 50px;
+    font-weight: bold;
+   color: #485785">Welcome {{ user }}</h1>
+    <br />
+    <div class="section-container">
+      <p style="font-size: 1.2em; font-weight: bold; color: #485785">
+        What is ClipLy?
+      </p>
+      <p style="margin-bottom: 1.5em; color: #485785">
+        ClipLy is your personal online bookmark manager, designed to store all
+        your favorite URLs in one convenient place. Easily save, organize, and
+        access your bookmarks from any device.
+      </p>
+    </div>
+    <div class="why-use-cliply-container">
+      <div class="image-container">
+        <img
+          src="{% static 'C:\Users\Hp\OneDrive\Desktop\bookmark\bookmark\static\images\girl.jpeg' %}"
+        />
+      </div>
+      <div class="text">
+        <p style="font-size: 1.2em; font-weight: bold; color: #485785">
+          Why Use ClipLy?
+        </p>
+        <ul style="margin-bottom: 1.5em; color: #485785">
+          <li>
+            <strong>Centralized Management:</strong> Keep all your bookmarks
+            organized and accessible from anywhere.
+          </li>
+          <li>
+            <strong>User-Friendly:</strong> Simple, intuitive interface for easy
+            navigation and bookmark management.
+          </li>
+          <li>
+            <strong>Secure:</strong> Your data is safe with us, ensuring only
+            you have access to your saved bookmarks.
+          </li>
+          <li>
+            <strong>Continuous Improvements:</strong> We are always working on
+            new features to enhance your experience.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p style="font-size: 1.2em; font-weight: bold; color: #485785">
+      Start saving your Bookmarks with ClipLy.
+    </p>
+  </div>
+  <div class="image-container">
+    <img src="{% static 'images/card2.jpg' %}" />
+  </div>
+</div>
+
+<br />
+
+</div>
+{% endblock %}
